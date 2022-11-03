@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - IndexedDB</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+</head>
+<body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-1 text-center">CRUD IndexedDB</h1>
+            <nav class="mt-8">
+                <a href="index.html" class="px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400  rounded-md font-bold underline-none">Clientes</a>
+                <a href="nuevo-cliente.html" class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400 bg-teal-700 rounded-md font-bold underline-none">Nuevo Cliente</a>
+                <a href="https://renemamani.github.io/crud/index.html" class=" text-decoration-none px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400 rounded-md">Citas Veterinaria</a>
+            </nav>
+        </aside> <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gradient-to-r from-green-400 to-blue-500 hover:from-cyan-500 hover:to-skyblue-500">
+            <h2 class=" underline-none text-3xl font-bold text-center"> Nuevo Cliente</h2>
+
+            <div class="flex flex-col mt-10 items-center">
+                <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
+                    <div class=" shadow overflow-hidden sm:rounded-lg border border-blue-200 ">
+                        <form id="formulario" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-cyan-500 hover:to-violet-500 p-3">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="nombre"
+                                    name="nombre"
+                                    type="text"
+                                    placeholder="Nombre Cliente"
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Correo</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Email Cliente"
+                                />
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Teléfono</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="telefono"
+                                    name="telefono"
+                                    type="tel"
+                                    placeholder="Teléfono Cliente"
+                                />
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="empresa">Empresa</label>
+                                <input 
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="empresa"
+                                    name="empresa"
+                                    type="text"
+                                    placeholder="Empresa Cliente"
+                                />
+                            </div>
+
+
+                            <input
+                                type="submit"
+                                class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold rounded-md"
+                                value="Agregar Cliente"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/nuevocliente.js"></script>
+</body>
+</html>
